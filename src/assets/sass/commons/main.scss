@@ -1,0 +1,92 @@
+$backGroundBlack: #000;
+$fontColorWhite: #fff;
+$fontFamilyDefault: 'Roboto',
+sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $backGroundBlack;
+  color: $fontColorWhite;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+b,
+span {
+  font-family: $fontFamilyDefault;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.block-section {
+  display: block;
+}
+
+.main-left {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+.main-right {
+  position:absolute;
+  right: 30px;
+  bottom: 30px;
+
+  & img {
+    cursor: pointer;
+    
+    height: auto;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.2)
+    }
+}
+}
+
+.footer-contain {
+  margin-top: calc(10px - 220px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $fontFamilyDefault;
+
+  .footer-mod {
+    color: rgb(223, 91, 228);
+  }
+
+  & img {
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2)
+    }
+
+  }
+}
+
+.error-default {
+  margin-top: 40px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
